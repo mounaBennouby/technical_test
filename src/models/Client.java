@@ -4,7 +4,7 @@ public class Client {
     private String name;
     private Account account;
 
-    public Client(String name, int balance){
+    public Client(String name){
         this.name = name;
         this.account = new Account();
     }
@@ -18,4 +18,5 @@ public class Client {
     {
         return this.account;
     }
+
 }

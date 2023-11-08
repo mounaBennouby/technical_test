@@ -19,7 +19,7 @@ public class AccountServiceTest {
         public void testTransactions()
         {
             LocalDate date = LocalDate.now();
-            Client client1 = new Client("Mouna", 0);
+            Client client1 = new Client("Mouna");
             AccountServiceImpl accountServiceImpl = new AccountServiceImpl(client1.getAccount());
             List<Transaction> expectedTransactions = new ArrayList<>();
             expectedTransactions.add(new Transaction(1000,date.toString()));
@@ -34,7 +34,7 @@ public class AccountServiceTest {
         @Test
         public void testWithdraw()
         {
-            Client client1 = new Client("Mouna", 0);
+            Client client1 = new Client("Mouna");
             AccountServiceImpl accountServiceImpl = new AccountServiceImpl(client1.getAccount());
             LocalDate date = LocalDate.now();
             List<Transaction> expectedTransactions = new ArrayList<>();
